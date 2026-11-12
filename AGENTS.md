@@ -6,7 +6,7 @@ This file provides guidance to coding agents (Claude Code, Codex, ...) when work
 
 Linq.J is a zero-dependency Java library that brings LINQ (Language Integrated Query) capabilities to Java, enabling SQL-like querying of in-memory collections via a fluent, chainable API with lambda expressions.
 
-- **Maven coordinates:** `xyz.erupt:linq.j` (version in `pom.xml`, currently `1.0.0`)
+- **Maven coordinates:** `xyz.erupt:linq.j` (the version is in `pom.xml`)
 - **Requirements:** JDK 8+, zero production dependencies. The compiler plugin sets `source`/`target` 8 (not `release`), so a newer JDK accepts APIs that do not exist on Java 8 — keep main code to Java 8 syntax and APIs (no `var`, although the README examples use it).
 - **Test dependencies only:** JUnit 4.13.2, Gson 2.9.1. The test models in `src/test/java/xyz/erupt/linq/data/` write their getters by hand (no Lombok).
 
